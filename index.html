@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>KBC <h3>Reloaded</h3> </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet" ');
+body{
+ margin:0;
+ font-size:16px;
+ background-color:#009688;
+}
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+   outline:none;
+}
+
+.custom-box{
+   max-width:700px;
+   background-color:#ffffff;
+   margin:40px auto;
+  padding: 30px;
+border-radius:10px;
+}
+.custom-box::before,
+.custom-box::after{
+content:'';
+clear:both;
+display:table;
+}
+
+.custom-box .hide{
+ display:none;
+}
+.home-box h3{
+ font-size:18px;
+ color:#000000;
+ font-weight:500;
+ margin-bottom:15px;
+line-height:25px;
+}
+.home-box p{
+font-size:16px;
+margin-bottom:10px;
+line-height:22px;
+color:#000000;
+font-weight:400;
+}
+.home-box p span{
+ font-weight:500;
+}
+.home-box btn{
+margin-top:10px;
+}
+.btn{
+ padding:15px 45px;
+background-color: #009688;
+color:#ffffff;
+border:none;
+border-radius:5px;
+font-family:'Montserrat', sans-serif;
+font-size:16px;
+cursor:pointer;
+display:inline-block;
+}
+.quiz-box  .question-number,
+.quiz-box  .question-text,
+.quiz-box  .option-container,
+.quiz-box  .next-question-btn,
+.quiz-box  .answers-indicator{
+width:100%;
+float:left;
+}
+.quiz-box  .question-number{
+ font-size:18px;
+color:#009688;
+font-weight:600; 
+border-bottom:1px solid #cccccc;
+padding-bottom:10px;
+line-height:25px;
+}
+.quiz-box  .question-text{
+ font-size:22px;
+color:#000000;
+font-weight:400; 
+padding:20px 0;
+line-height:28px;
+margin:0;
+}
+
+.quiz-box  .option-container .option{
+background-color:#cccccc;
+padding:15px;
+font-size:16px;
+line-height:22px;
+color:#000000;
+border-radius:5px;
+margin-bottom:10px;
+cursor:pointer;
+text-transform:capitalize;
+}
+
+.quiz-box .btn{
+ margin:15px 0;
+}
+.quiz-box  .answer-indicator{
+border-top:1px solid #cccccc;
+}
+.quiz-box  .answer-indicator div{
+height:40px;
+width:40px;
+display:inline-block;
+background-color:#cccccc;
+border-radius:50%;
+margin-right:3px;
+margin-top:15px;
+}
+
+.result-box{
+text-align:center;
+}
+.result-box .hide{
+display:none;
+}
+
+.result-box h1{
+font-size:36px;
+line-height:42px;
+color:#009688;
+}
+.result-box table{
+width:100%;
+border-collapse:collapse;
+margin:30px 0;
+}
+.result-box table td{
+border:1px solid #cccccc;
+padding:8px 15px;
+font-weight:500;
+color:#000000;
+width:50%;
+text-align:left;
+font-size:18px;
+}
+.result-box .btn{
+margin-right:20px;
+}
+</style>
+
+
+
+ </head>
+<body>
+ <div> class="home-box custom-box hide">
+     <h1>KBC Questions</h1>
+     <p>This quiz that displays 10 random questions. The questions can vary depends on levels <span class = "total-questions">1088</span></p>
+    <button type="button" class="btn">Start Quiz</button> 
+</div>
+<div class="quiz-box custom-box ">
+  <div class="question-number">
+    Question 1 of 10
+ </div>
+<div class="question-text">
+Who is Known as the Master Blaster in Indian Cricket
+ </div>
+<div class="question-container">
+  <div class="option">Kapil Dev </div>
+ <div class="option">Sachin Tendulkar </div>
+<div class="option">Sunil Gavaskar </div>
+<div class="option">Harbajan Singh </div>
+ </div>
+<div class="next-question-btn">
+  <button type="button" class="btn">Next</button>
+</div>
+<div class="answers-indicator">
+  <div></div>
+ <div></div>
+ <div></div>
+ <div></div>
+ <div></div>
+
+</div>
+ </div>
+<div class="result-box custom-box hide">
+< h1> Quiz Result</h1>
+<table>
+<tr>
+<td>Total Questions</td>
+<td><span class="total-question">10</span></td>
+</tr>
+<tr>
+<td>Attempt</td>
+<td><span class="total-attempt">9</span></td>
+</tr>
+<tr>
+<td>Correct</td>
+<td><span class="total-correct">3</span></td>
+</tr>
+<tr>
+<td>Wrong</td>
+<td><span class="total-wrong">1</span></td>
+</tr>
+<tr>
+<td>Percentage</td>
+<td><span class="Percentage">60.00</span></td>
+</tr>
+<tr>
+<td>Total score</td>
+<td><span class="total-score">3/5</span></td>
+</tr>
+</table>
+<button type="button" class="btn">Try Again</button>
+<button type="button" class="btn">Go To Home</button>
+</div>
+</body>
+</html>
+
+
+
+   
+   
+
+
+
+  
+
+
+
