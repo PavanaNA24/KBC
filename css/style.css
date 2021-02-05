@@ -1,10 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>KBC <h3>Reloaded</h3> </title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet" ');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 body{
  margin:0;
  font-size:16px;
@@ -14,7 +8,7 @@ body{
     box-sizing: border-box;
     margin:0;
     padding:0;
-   outline:none;
+    outline:none;
 }
 
 .custom-box{
@@ -100,8 +94,29 @@ border-radius:5px;
 margin-bottom:10px;
 cursor:pointer;
 text-transform:capitalize;
+opacity:0;
+animation: fadeIn 0.3s ease forwards;
+position: relative;
+overflow: hidden;
 }
-
+@keyframes fadeIn{
+	0%{
+		opacity:0;
+	}
+	100%{
+		opacity:1;
+	}
+}
+.quiz-box .option-container .option.correct::before{
+	content: '';
+	position:absolute;
+	left:0;
+	top:0;
+	height:100%;
+	width:100%;
+	background-color:green;
+	z-index: -1;
+}
 .quiz-box .btn{
  margin:15px 0;
 }
@@ -146,85 +161,5 @@ font-size:18px;
 }
 .result-box .btn{
 margin-right:20px;
+
 }
-</style>
-
-
-
- </head>
-<body>
- <div> class="home-box custom-box hide">
-     <h1>KBC Questions</h1>
-     <p>This quiz that displays 10 random questions. The questions can vary depends on levels <span class = "total-questions">1088</span></p>
-    <button type="button" class="btn">Start Quiz</button> 
-</div>
-<div class="quiz-box custom-box ">
-  <div class="question-number">
-    Question 1 of 10
- </div>
-<div class="question-text">
-Who is Known as the Master Blaster in Indian Cricket
- </div>
-<div class="question-container">
-  <div class="option">Kapil Dev </div>
- <div class="option">Sachin Tendulkar </div>
-<div class="option">Sunil Gavaskar </div>
-<div class="option">Harbajan Singh </div>
- </div>
-<div class="next-question-btn">
-  <button type="button" class="btn">Next</button>
-</div>
-<div class="answers-indicator">
-  <div></div>
- <div></div>
- <div></div>
- <div></div>
- <div></div>
-
-</div>
- </div>
-<div class="result-box custom-box hide">
-< h1> Quiz Result</h1>
-<table>
-<tr>
-<td>Total Questions</td>
-<td><span class="total-question">10</span></td>
-</tr>
-<tr>
-<td>Attempt</td>
-<td><span class="total-attempt">9</span></td>
-</tr>
-<tr>
-<td>Correct</td>
-<td><span class="total-correct">3</span></td>
-</tr>
-<tr>
-<td>Wrong</td>
-<td><span class="total-wrong">1</span></td>
-</tr>
-<tr>
-<td>Percentage</td>
-<td><span class="Percentage">60.00</span></td>
-</tr>
-<tr>
-<td>Total score</td>
-<td><span class="total-score">3/5</span></td>
-</tr>
-</table>
-<button type="button" class="btn">Try Again</button>
-<button type="button" class="btn">Go To Home</button>
-</div>
-</body>
-</html>
-
-
-
-   
-   
-
-
-
-  
-
-
-
